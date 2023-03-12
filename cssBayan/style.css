@@ -192,11 +192,6 @@ h1 {
     height: 2rem;
   }
 
-  /* .accordion > .accordion-item:checked ~ section {
-    height: 47vh;
-  } */
-
-  
   .accordion:hover > .accordion-item ~ section {
     cursor: pointer;
     height: 50vh;
