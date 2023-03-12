@@ -94,11 +94,12 @@ h1 {
 }
 
 .accordion > section img {
+  max-height: 100%;
   width: 18rem;
   border-radius: 0.3rem;
 }
 
-@media (min-width: 820px) and (max-width: 1919px) {
+@media (min-width: 820px) and (max-width: 1180px) {
   h1 {
     font-size: 3rem;
     margin: 1.5rem 0 1.5rem 2rem;
@@ -128,10 +129,11 @@ h1 {
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1181px) {
   .wrapper {
     width: 60vw;
     margin: 0 auto;
+    max-height: 100vh;
   }
 
   h1 {
@@ -190,6 +192,11 @@ h1 {
     height: 2rem;
   }
 
+  /* .accordion > .accordion-item:checked ~ section {
+    height: 47vh;
+  } */
+
+  
   .accordion:hover > .accordion-item ~ section {
     cursor: pointer;
     height: 50vh;
@@ -202,7 +209,7 @@ h1 {
   }
 
   .accordion > section img {
-    width: 35rem;
+    width: 25rem;
     box-shadow: rgba(0, 0, 0, 0.56) 0 1rem 3rem 0.25rem;
     transition: all 0.5s ease-in-out;
   }
